@@ -66,6 +66,14 @@ class MyLogFormatter(matplotlib.ticker.LogFormatterMathtext):
 
         return rv
 
+
+def format_labels(rv):
+
+    rv = re.sub(r'\^\{-', r'^{\\minus', rv)
+    return rv
+
+
+
 def _example():
   example = r'''
 ##### EXAMPLE #####

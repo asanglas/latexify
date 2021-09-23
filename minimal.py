@@ -20,14 +20,15 @@ fig, ax = plt.subplots()
 #axis configuration
 ax.set_xscale("linear") # before the logformatter
 ax.set_yscale("log")
+#format the log axis if used
+ax.yaxis.set_major_formatter(MyLogFormatter())
+# ax.xaxis.set_major_formatter(MyLogFormatter())
+
 # for the ticks
 ax.minorticks_on()
 ax.tick_params(axis='y', which='minor', direction = 'out',left=True)
 ax.tick_params(axis='x', which='minor', direction = 'out', bottom=True)
 
-#format the log axis if used
-ax.yaxis.set_major_formatter(MyLogFormatter())
-# ax.xaxis.set_major_formatter(MyLogFormatter())
 
 #labels. USE \minus for the minus sign in the exponents
 ax.set_xlabel(r'x label')
