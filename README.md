@@ -7,4 +7,4 @@ A plot "latexifyer" for Python. This is a combination of pieces of code found in
 ```python
 from latexify import latexify, MyLogFormatter, format_labels, _example
 ```
-Run `example()` to print out an example. If you want to format a `list_of_labels`, just to `list(map(format_labels, list_of_labels))`.
+Run `example()` to print out an example. If you want to format a `list_of_labels`, just do `list(map(format_labels, list_of_labels))`.
